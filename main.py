@@ -1,7 +1,13 @@
-n=int(input("Enter number:"))
-fact=1
-while(n>0):
-    fact=fact*n
-    n=n-1
-print("Factorial of the number is: ")
-print(fact)
+class Player:
+  def play(self):
+    print("The player is playing cricket.")
+class Batsman (Player):
+  def play(self):
+    print("The batsman is batting.")
+class Bowler (Player):
+  def play(self):
+    print("The bowler is bowling.")
+batsman = Batsman()
+bowler = Bowler()
+batsman.play()
+bowler.play()
